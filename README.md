@@ -9,5 +9,5 @@
  - Webpages used for data collection
   - StockX
   - Ebay
-  - GOAT
   - Grailed
+  - GOAT
