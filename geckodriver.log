@@ -1,0 +1,215 @@
+1585242971235	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/gp/fdwrkxjd7r38wyhyp43wd0nc0000gp/T/rust_mozprofile.ZcKm9pj5Xyy1"
+1585242971758	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585242972025	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585242972025	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585242972025	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585242972025	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1585242974029	Marionette	INFO	Listening on port 53957
+1585242974106	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585242980977	Marionette	INFO	Stopped listening on port 53957
+1585243002683	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/gp/fdwrkxjd7r38wyhyp43wd0nc0000gp/T/rust_mozprofile.vJxRwenp51hB"
+1585243003065	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585243003324	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585243003324	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585243003325	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585243003325	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1585243004955	Marionette	INFO	Listening on port 54022
+1585243005028	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585243022593	Marionette	INFO	Stopped listening on port 54022
+1585243143794	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/gp/fdwrkxjd7r38wyhyp43wd0nc0000gp/T/rust_mozprofile.WuObpZWyexRn"
+1585243144212	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585243144504	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585243144504	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585243144504	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585243144505	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1585243146237	Marionette	INFO	Listening on port 54289
+1585243146340	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585243216994	Marionette	INFO	Stopped listening on port 54289
+1585243263363	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/gp/fdwrkxjd7r38wyhyp43wd0nc0000gp/T/rust_mozprofile.UsktbwsS70SZ"
+1585243263754	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585243264011	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585243264011	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585243264012	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585243264012	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1585243265766	Marionette	INFO	Listening on port 54494
+1585243265820	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource:///modules/SearchTelemetry.jsm, line 658: TypeError: channel.loadInfo is null
+JavaScript error: resource:///modules/SearchTelemetry.jsm, line 658: TypeError: channel.loadInfo is null
+console.error: "Error while calling actor 'pagestyle's method 'getLayout'" "node is null"
+console.error: "getLayout@resource://devtools/server/actors/styles.js:944:5\nhandler@resource://devtools/shared/protocol/Actor.js:154:37\nonPacket@resource://devtools/server/debugger-server-connection.js:380:58\nreceiveMessage@resource://devtools/shared/transport/child-transport.js:66:16\n"
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2243))
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2243))
+console.error: (new Error("Protocol error (unknownError): node is null", "resource://devtools/shared/protocol/Front.js", 276))
+JavaScript error: resource:///modules/SearchTelemetry.jsm, line 658: TypeError: channel.loadInfo is null
+JavaScript error: resource:///modules/SearchTelemetry.jsm, line 658: TypeError: channel.loadInfo is null
+JavaScript error: resource:///modules/SearchTelemetry.jsm, line 658: TypeError: channel.loadInfo is null
+1585243780746	Marionette	INFO	Stopped listening on port 54494
+1585243792864	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/gp/fdwrkxjd7r38wyhyp43wd0nc0000gp/T/rust_mozprofile.CxkvAT0Cj7Zl"
+1585243793250	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585243793509	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585243793509	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585243793509	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585243793509	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1585243795107	Marionette	INFO	Listening on port 54885
+1585243795120	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585244003170	Marionette	INFO	Stopped listening on port 54885
+1585244026781	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/gp/fdwrkxjd7r38wyhyp43wd0nc0000gp/T/rust_mozprofile.ceUS6uwI9YuI"
+1585244027160	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585244027415	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585244027415	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585244027415	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585244027415	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1585244029006	Marionette	INFO	Listening on port 55212
+1585244029026	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585244096136	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/gp/fdwrkxjd7r38wyhyp43wd0nc0000gp/T/rust_mozprofile.1YJfv8AGMtSQ"
+1585244096542	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585244096827	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585244096827	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585244096827	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585244096827	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1585244098438	Marionette	INFO	Listening on port 55479
+1585244098511	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585244102298	Marionette	INFO	Stopped listening on port 55212
+1585244136858	Marionette	INFO	Stopped listening on port 55479
+1585244580499	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/gp/fdwrkxjd7r38wyhyp43wd0nc0000gp/T/rust_mozprofile.toIZpesAwlSe"
+*** You are running in headless mode.
+1585244580858	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585244581124	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585244581124	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585244581124	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585244581124	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1585244582699	Marionette	INFO	Listening on port 55837
+1585244582746	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://beacon.riskified.com/?shop=stockx.com&sid=3760920a-b3ef-4c25-96b9-1bc50256bff4, line 6: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://beacon.riskified.com/?shop=stockx.com&sid=3760920a-b3ef-4c25-96b9-1bc50256bff4, line 6: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://beacon.riskified.com/?shop=stockx.com&sid=3760920a-b3ef-4c25-96b9-1bc50256bff4, line 6: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://beacon.riskified.com/?shop=stockx.com&sid=3760920a-b3ef-4c25-96b9-1bc50256bff4, line 6: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://beacon.riskified.com/?shop=stockx.com&sid=3760920a-b3ef-4c25-96b9-1bc50256bff4, line 6: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://beacon.riskified.com/?shop=stockx.com&sid=3760920a-b3ef-4c25-96b9-1bc50256bff4, line 6: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://beacon.riskified.com/?shop=stockx.com&sid=3760920a-b3ef-4c25-96b9-1bc50256bff4, line 6: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://beacon.riskified.com/?shop=stockx.com&sid=3760920a-b3ef-4c25-96b9-1bc50256bff4, line 6: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1585244856676	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/gp/fdwrkxjd7r38wyhyp43wd0nc0000gp/T/rust_mozprofile.r2p1UZxpSwnN"
+*** You are running in headless mode.
+1585244857010	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585244857255	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585244857255	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585244857256	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585244857256	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1585244858774	Marionette	INFO	Listening on port 56863
+1585244858823	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://beacon.riskified.com/?shop=stockx.com&sid=76846cf1-8c28-4827-8d3a-717b9f8f5f77, line 6: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://beacon.riskified.com/?shop=stockx.com&sid=76846cf1-8c28-4827-8d3a-717b9f8f5f77, line 6: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://beacon.riskified.com/?shop=stockx.com&sid=76846cf1-8c28-4827-8d3a-717b9f8f5f77, line 6: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://beacon.riskified.com/?shop=stockx.com&sid=76846cf1-8c28-4827-8d3a-717b9f8f5f77, line 6: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://beacon.riskified.com/?shop=stockx.com&sid=76846cf1-8c28-4827-8d3a-717b9f8f5f77, line 6: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://beacon.riskified.com/?shop=stockx.com&sid=76846cf1-8c28-4827-8d3a-717b9f8f5f77, line 6: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://beacon.riskified.com/?shop=stockx.com&sid=76846cf1-8c28-4827-8d3a-717b9f8f5f77, line 6: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://beacon.riskified.com/?shop=stockx.com&sid=76846cf1-8c28-4827-8d3a-717b9f8f5f77, line 6: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1585247048005	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/gp/fdwrkxjd7r38wyhyp43wd0nc0000gp/T/rust_mozprofile.3qdNNpo5HfvQ"
+*** You are running in headless mode.
+1585247048346	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585247048592	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585247048592	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585247048593	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585247048593	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1585247050164	Marionette	INFO	Listening on port 58249
+1585247050240	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://beacon.riskified.com/?shop=stockx.com&sid=54cbff13-7bc6-42e5-ab2c-9e0751c74f7b, line 6: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://beacon.riskified.com/?shop=stockx.com&sid=54cbff13-7bc6-42e5-ab2c-9e0751c74f7b, line 6: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://beacon.riskified.com/?shop=stockx.com&sid=54cbff13-7bc6-42e5-ab2c-9e0751c74f7b, line 6: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://beacon.riskified.com/?shop=stockx.com&sid=54cbff13-7bc6-42e5-ab2c-9e0751c74f7b, line 6: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://beacon.riskified.com/?shop=stockx.com&sid=54cbff13-7bc6-42e5-ab2c-9e0751c74f7b, line 6: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://beacon.riskified.com/?shop=stockx.com&sid=54cbff13-7bc6-42e5-ab2c-9e0751c74f7b, line 6: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://beacon.riskified.com/?shop=stockx.com&sid=54cbff13-7bc6-42e5-ab2c-9e0751c74f7b, line 6: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://beacon.riskified.com/?shop=stockx.com&sid=54cbff13-7bc6-42e5-ab2c-9e0751c74f7b, line 6: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1585247152875	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/gp/fdwrkxjd7r38wyhyp43wd0nc0000gp/T/rust_mozprofile.fR3wWEU9tTJK"
+*** You are running in headless mode.
+1585247153223	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585247153477	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585247153477	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585247153477	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585247153478	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1585247155042	Marionette	INFO	Listening on port 58876
+1585247155117	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://beacon.riskified.com/?shop=stockx.com&sid=adbce7b1-4d0c-4b42-8a11-ab6bf97fbc98, line 6: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://beacon.riskified.com/?shop=stockx.com&sid=adbce7b1-4d0c-4b42-8a11-ab6bf97fbc98, line 6: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://beacon.riskified.com/?shop=stockx.com&sid=adbce7b1-4d0c-4b42-8a11-ab6bf97fbc98, line 6: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://beacon.riskified.com/?shop=stockx.com&sid=adbce7b1-4d0c-4b42-8a11-ab6bf97fbc98, line 6: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript error: resource:///modules/SearchTelemetry.jsm, line 658: TypeError: channel.loadInfo is null
+JavaScript warning: https://beacon.riskified.com/?shop=stockx.com&sid=adbce7b1-4d0c-4b42-8a11-ab6bf97fbc98, line 6: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://beacon.riskified.com/?shop=stockx.com&sid=adbce7b1-4d0c-4b42-8a11-ab6bf97fbc98, line 6: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://beacon.riskified.com/?shop=stockx.com&sid=adbce7b1-4d0c-4b42-8a11-ab6bf97fbc98, line 6: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://beacon.riskified.com/?shop=stockx.com&sid=adbce7b1-4d0c-4b42-8a11-ab6bf97fbc98, line 6: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1585247362729	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/gp/fdwrkxjd7r38wyhyp43wd0nc0000gp/T/rust_mozprofile.TxYvHtoLVRx2"
+*** You are running in headless mode.
+1585247363115	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585247363363	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585247363364	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585247363364	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585247363364	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1585247364920	Marionette	INFO	Listening on port 59919
+1585247364973	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://beacon.riskified.com/?shop=stockx.com&sid=4db41563-0429-481f-b155-d33b207dc686, line 6: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://beacon.riskified.com/?shop=stockx.com&sid=4db41563-0429-481f-b155-d33b207dc686, line 6: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://beacon.riskified.com/?shop=stockx.com&sid=4db41563-0429-481f-b155-d33b207dc686, line 6: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://beacon.riskified.com/?shop=stockx.com&sid=4db41563-0429-481f-b155-d33b207dc686, line 6: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript error: resource:///modules/SearchTelemetry.jsm, line 658: TypeError: channel.loadInfo is null
+JavaScript warning: https://beacon.riskified.com/?shop=stockx.com&sid=4db41563-0429-481f-b155-d33b207dc686, line 6: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://beacon.riskified.com/?shop=stockx.com&sid=4db41563-0429-481f-b155-d33b207dc686, line 6: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://beacon.riskified.com/?shop=stockx.com&sid=4db41563-0429-481f-b155-d33b207dc686, line 6: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://beacon.riskified.com/?shop=stockx.com&sid=4db41563-0429-481f-b155-d33b207dc686, line 6: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+2020-03-26 13:32:56.077 firefox-bin[38510:1354233] HIToolbox: received notification of WindowServer event port death.
+2020-03-26 13:32:56.077 firefox-bin[38298:1345014] HIToolbox: received notification of WindowServer event port death.
+2020-03-26 13:32:56.077 firefox-bin[38447:1351462] HIToolbox: received notification of WindowServer event port death.
+2020-03-26 13:32:56.078 firefox-bin[38510:1354233] port matched the WindowServer port created in BindCGSToRunLoop
+2020-03-26 13:32:56.078 firefox-bin[38447:1351462] port matched the WindowServer port created in BindCGSToRunLoop
+2020-03-26 13:32:56.078 firefox-bin[38298:1345014] port matched the WindowServer port created in BindCGSToRunLoop
+2020-03-26 13:32:56.078 firefox-bin[38395:1349204] HIToolbox: received notification of WindowServer event port death.
+2020-03-26 13:32:56.078 firefox-bin[38188:1341727] HIToolbox: received notification of WindowServer event port death.
+2020-03-26 13:32:56.078 firefox-bin[38395:1349204] port matched the WindowServer port created in BindCGSToRunLoop
+2020-03-26 13:32:56.078 firefox-bin[38188:1341727] port matched the WindowServer port created in BindCGSToRunLoop
+No session list!
+No session list!
+No session list!
+No session list!
+No session list!
+No session list!
+No session list!
+No session list!
+No session list!
+No session list!
+1585247851024	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/gp/fdwrkxjd7r38wyhyp43wd0nc0000gp/T/rust_mozprofile.g2kmWzwllMza"
+*** You are running in headless mode.
+1585247851418	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585247851669	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585247851669	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585247851669	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585247851669	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1585247853226	Marionette	INFO	Listening on port 61267
+1585247853247	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://beacon.riskified.com/?shop=stockx.com&sid=d4e683c6-1fa7-43f7-b60e-d933b8d82c67, line 6: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://beacon.riskified.com/?shop=stockx.com&sid=d4e683c6-1fa7-43f7-b60e-d933b8d82c67, line 6: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://beacon.riskified.com/?shop=stockx.com&sid=d4e683c6-1fa7-43f7-b60e-d933b8d82c67, line 6: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://beacon.riskified.com/?shop=stockx.com&sid=d4e683c6-1fa7-43f7-b60e-d933b8d82c67, line 6: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
