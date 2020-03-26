@@ -9,19 +9,25 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
 from termcolor import colored
+import sys
 
 print(colored("Shoe Market Price Calculator", "green"))
 
 shoe = input("What shoe do you want the market price range of? ")
 size = input("What size? ")
 
+# Asserting the size is legitimate -> 11.5 won't work right now.
+while(size.isdigit() is False or 4 > float(size) or float(size) > 15):
+    print(colored("Invalid size, try again. Size needs to be greater than 4 and less than 15.", "red"))
+    size = input("What size? ")
+
+# Defining the driver 
 options = Options()
 options.headless = True
 driver = webdriver.Firefox(options=options)
 print(colored("Driver successfully created as Firefox headless...", "green"))
 
-#Stock X:
-
+# Stock X prices:
 print("Getting StockX.com...")
 driver.get("https://www.stockx.com")
 
@@ -46,4 +52,4 @@ for x in range(len(size_div)):
     if(size_div[x].text == str(size)):
         stockx_price = size_div[x].find_element_by_class_name("subtitle").text
     
-print(stockx_price)
+print(colored("StockX price: " + str(stockx_price), "green"))
