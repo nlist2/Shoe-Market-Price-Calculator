@@ -16,7 +16,7 @@ print(colored("Shoe Market Price Calculator\n", "green"))
 
 shoe = input("What shoe do you want the market price range of? ")
 size = input("What size? ")
-condition = input("New or used? \n")
+condition = input("New or used? ")
 
 # Asserting the size is legitimate -> 11.5 won't work right now.
 while(size.isdigit() is False or 4 > float(size) or float(size) > 15):
@@ -27,7 +27,7 @@ while(size.isdigit() is False or 4 > float(size) or float(size) > 15):
 options = Options()
 options.headless = True
 driver = webdriver.Firefox(options=options)
-print(colored("Automation successfully created as a headless Firefox Webdriver...", "green"))
+print(colored("\nAutomation successfully created as a headless Firefox Webdriver...\n", "green"))
 
 # Stock X prices:
 try:
@@ -36,7 +36,7 @@ try:
 
     #Finding the search input and sending keys of the shoe that we want
     driver.find_element_by_id("home-search").send_keys(str(shoe) + Keys.RETURN)
-    sys.stdout.write("Getting " + str(shoe) + "...")
+    print("Getting " + str(shoe) + "...")
 
     #First element in result and clicking it
     shoe_tile = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "tile.Tile-c8u7wn-0.bCufAv")))
@@ -54,8 +54,8 @@ try:
     for x in range(len(size_div)):
         if(size_div[x].text == str(size)):
             stockx_price = size_div[x].find_element_by_class_name("subtitle").text
-    sys.stdout.flush()
-    sys.stdout.write(colored("StockX price: " + str(stockx_price), "green"))
+        
+    print(colored("StockX price: " + str(stockx_price), "green"))
 
 except:
     print(colored("StockX failed.... Continuing...", "red"))
@@ -95,10 +95,43 @@ try:
         ebay_price_list.append(float(current_price[1:7]))
 
     average_price = str(statistics.mean(ebay_price_list))
-    print("Ebay average price: $" + colored(average_price, "green"))
+    print("Ebay average price: " + colored("$" + average_price, "green"))
 
 except:
     print(colored("Ebay failed.... Continuing...", "red"))
+
+try:
+    print("Getting GOAT...")
+    driver.get("https://www.goat.com")
+
+    #clicking the search button
+    driver.find_element_by_id("Layer_1").click()
+
+    search_input = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "InstantSearchBox__Input-wfzp5c-1.gboPWO")))
+    search_input.send_keys(str(shoe) + Keys.RETURN)
+    print("Getting " + str(shoe) + "...")
+
+    results_box = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "filter-results-area")))
+    time.sleep(1)
+    results_box.find_elements_by_class_name("Grid__CellWrapper-sc-1njij7e-0.dWCtit")[0].click()
+
+    price_box = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "ProductTitlePaneActions__ButtonTextWrapper-l1sjea-0.kHmiHb")))
+    price_box.click()
+
+    size_box = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "ProductSelectSize__SizeList-eiqexh-5.kHqGmR")))
+    sizes = size_box.find_elements_by_class_name("ProductVariantSize__Wrapper-ci5six-0.dCiSfE")
+    prices = size_box.find_elements_by_class_name("ProductVariantButton__Price-fapubr-2.fHJrlz")
+
+    for x in range(len(sizes)):
+        if(str(size) in sizes[x].text):
+            goat_price = prices[x].text
+            print("GOAT current price: " + colored(goat_price, "green"))
+            sizes[x].click()
+            time.sleep(1)
+            goat_url = driver.current_url
+            break
+except:
+    print(colored("GOAT failed.... Continuing...", "red"))
 
 #Print Summary
 print("\nPrice Summary for: " + str(shoe) + " size " + str(size) + ":\n")
@@ -108,3 +141,6 @@ print("Find at: " + str(stockx_url) + "\n")
 print("\t Ebay:")
 print("\t\t Average price: $" + average_price)
 print("Find at: " + str(ebay_url) + "\n")
+print("\t GOAT:")
+print("\t\t Current price: " + str(goat_price))
+print("Find at: " + str(goat_url) + "\n")
