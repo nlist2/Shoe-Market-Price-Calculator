@@ -41,7 +41,7 @@ try:
     #First element in result and clicking it
     shoe_tile = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "tile.Tile-c8u7wn-0.bCufAv")))
     shoe_tile.click()
-
+    stockx_url = driver.current_url
     #Size number
     #implicitywait
     size_box = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.CLASS_NAME, "fa.fa-chevron-down")))
@@ -68,7 +68,6 @@ try:
     search_input.send_keys(str(shoe) + Keys.RETURN)
 
     print("Getting " + str(shoe) + "...")
-
     size_div = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "size-component")))
     sizes = size_div.find_elements_by_class_name("size-component__square")
 
@@ -77,6 +76,8 @@ try:
             sizes[x].click()
             break
             print(colored("Correct size chosen...", "green"))
+        
+    ebay_url = driver.current_url
 
     num_results_box = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME,"srp-controls__count-heading")))
     num_results = num_results_box.find_element_by_tag_name("span").text
@@ -93,7 +94,17 @@ try:
         current_price = str(listings[x].text)
         ebay_price_list.append(float(current_price[1:7]))
 
-    print("Ebay average price: $" + colored(str(statistics.mean(ebay_price_list)), "green"))
-    
+    average_price = str(statistics.mean(ebay_price_list))
+    print("Ebay average price: $" + colored(average_price, "green"))
+
 except:
     print(colored("Ebay failed.... Continuing...", "red"))
+
+#Print Summary
+print("\nPrice Summary for: " + str(shoe) + " size " + str(size) + ":\n")
+print("\t StockX:")
+print("\t\t Current price: N/A")
+print("Find at: " + str(stockx_url) + "\n")
+print("\t Ebay:")
+print("\t\t Average price: $" + average_price)
+print("Find at: " + str(ebay_url) + "\n")
