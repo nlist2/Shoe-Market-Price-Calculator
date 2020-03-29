@@ -25,7 +25,7 @@ while(size.isdigit() is False or 4 > float(size) or float(size) > 15):
 options = Options()
 options.headless = True
 driver = webdriver.Firefox(options=options)
-print(colored("Driver successfully created as Firefox headless...", "green"))
+print(colored("Automation successfully created as a headless Firefox Webdriver...", "green"))
 
 # Stock X prices:
 try:
@@ -60,5 +60,9 @@ except:
 
 try:
     driver.get("https://www.ebay.com")
+
 except:
     print(colored("Ebay failed.... Continuing...", "red"))
+
+try:
+    driver.get("https://www.grailed.com")
