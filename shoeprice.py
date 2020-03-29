@@ -12,11 +12,11 @@ from termcolor import colored
 import sys
 import statistics
 
-print(colored("Shoe Market Price Calculator", "green"))
+print(colored("Shoe Market Price Calculator\n", "green"))
 
 shoe = input("What shoe do you want the market price range of? ")
 size = input("What size? ")
-condition = input("New or used? ")
+condition = input("New or used? \n")
 
 # Asserting the size is legitimate -> 11.5 won't work right now.
 while(size.isdigit() is False or 4 > float(size) or float(size) > 15):
@@ -36,7 +36,7 @@ try:
 
     #Finding the search input and sending keys of the shoe that we want
     driver.find_element_by_id("home-search").send_keys(str(shoe) + Keys.RETURN)
-    print("Getting " + str(shoe) + "...")
+    sys.stdout.write("Getting " + str(shoe) + "...")
 
     #First element in result and clicking it
     shoe_tile = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "tile.Tile-c8u7wn-0.bCufAv")))
@@ -54,8 +54,8 @@ try:
     for x in range(len(size_div)):
         if(size_div[x].text == str(size)):
             stockx_price = size_div[x].find_element_by_class_name("subtitle").text
-        
-    print(colored("StockX price: " + str(stockx_price), "green"))
+    sys.stdout.flush()
+    sys.stdout.write(colored("StockX price: " + str(stockx_price), "green"))
 
 except:
     print(colored("StockX failed.... Continuing...", "red"))
