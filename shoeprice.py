@@ -10,11 +10,13 @@ from selenium.webdriver.support import expected_conditions as EC
 import time
 from termcolor import colored
 import sys
+import statistics
 
 print(colored("Shoe Market Price Calculator", "green"))
 
 shoe = input("What shoe do you want the market price range of? ")
 size = input("What size? ")
+condition = input("New or used? ")
 
 # Asserting the size is legitimate -> 11.5 won't work right now.
 while(size.isdigit() is False or 4 > float(size) or float(size) > 15):
@@ -59,10 +61,39 @@ except:
     print(colored("StockX failed.... Continuing...", "red"))
 
 try:
+    print("Getting Ebay.com...")
     driver.get("https://www.ebay.com")
 
+    search_input = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "gh-tb.ui-autocomplete-input")))
+    search_input.send_keys(str(shoe) + Keys.RETURN)
+
+    print("Getting " + str(shoe) + "...")
+
+    size_div = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "size-component")))
+    sizes = size_div.find_elements_by_class_name("size-component__square")
+
+    for x in range(len(sizes)):
+        if(sizes[x].text == str(size)):
+            sizes[x].click()
+            break
+            print(colored("Correct size chosen...", "green"))
+
+    num_results_box = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME,"srp-controls__count-heading")))
+    num_results = num_results_box.find_element_by_tag_name("span").text
+    print("Ebay has " + str(num_results) + " results...")
+
+    results_box = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID,"srp-river-results")))
+    listings = results_box.find_elements_by_class_name("s-item__price")
+    ebay_price_list = []
+
+    if(int(num_results) > 47):
+        num_results = 47
+
+    for x in range(int(num_results)):
+        current_price = str(listings[x].text)
+        ebay_price_list.append(float(current_price[1:7]))
+
+    print("Ebay average price: $" + colored(str(statistics.mean(ebay_price_list)), "green"))
+    
 except:
     print(colored("Ebay failed.... Continuing...", "red"))
-
-try:
-    driver.get("https://www.grailed.com")
