@@ -26,7 +26,7 @@ while(size.isdigit() is False or 4 > float(size) or float(size) > 15):
 # Defining the driver 
 options = Options()
 options.headless = True
-driver = webdriver.Firefox(options=options)
+driver = webdriver.Firefox()
 print(colored("\nAutomation successfully created as a headless Firefox Webdriver...\n", "green"))
 
 # Stock X prices:
@@ -94,8 +94,8 @@ try:
         current_price = str(listings[x].text)
         ebay_price_list.append(float(current_price[1:7]))
 
-    average_price = str(statistics.mean(ebay_price_list))
-    print("Ebay average price: " + colored("$" + average_price, "green"))
+    ebay_average_price = str(statistics.mean(ebay_price_list))[0:6]
+    print("Ebay average price: " + colored("$" + ebay_average_price, "green"))
 
 except:
     print(colored("Ebay failed.... Continuing...", "red"))
@@ -124,7 +124,7 @@ try:
 
     for x in range(len(sizes)):
         if(str(size) in sizes[x].text):
-            goat_price = prices[x].text
+            goat_price = str(prices[x].text)[0:4]
             print("GOAT current price: " + colored(goat_price, "green"))
             sizes[x].click()
             time.sleep(1)
@@ -133,14 +133,45 @@ try:
 except:
     print(colored("GOAT failed.... Continuing...", "red"))
 
+try:
+    print("Getting Grailed...")
+    driver.get("https://www.grailed.com")
+
+    driver.find_element_by_id("globalheader_search").send_keys(str(shoe) + Keys.RETURN)
+    print("Getting " + str(shoe) + "...")
+    time.sleep(2)
+    grailed_url = driver.current_url
+
+    WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "listing-size.sub-title")))
+    sizes = driver.find_elements_by_class_name("listing-size.sub-title")
+    prices = driver.find_elements_by_class_name("sub-title.original-price")
+    grailed_price_list = []
+
+    for x in range(len(sizes)):
+        if(str(sizes[x].text) == str(size)):
+            grailed_price_list.append(int(str(prices[x].text)[1:4]))
+            print(grailed_price_list)
+
+    grailed_average_price = str(statistics.mean(grailed_price_list))
+    print("Grailed average price: " + colored("$" + grailed_average_price, "green"))
+ 
+except:
+    WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "ReactModal__Content ReactModal__Content--after-open.modal._hasHeader.AuthenticationModal")))
+    driver.find_element_by_class_name("close").click()
+    print("Closed Grailed 2FA...")
+    print(colored("Grailed failed.... Continuing...", "red"))
+
 #Print Summary
 print("\nPrice Summary for: " + str(shoe) + " size " + str(size) + ":\n")
 print("\t StockX:")
 print("\t\t Current price: N/A")
 print("Find at: " + str(stockx_url) + "\n")
 print("\t Ebay:")
-print("\t\t Average price: $" + average_price)
+print("\t\t Average price: $" + ebay_average_price)
 print("Find at: " + str(ebay_url) + "\n")
 print("\t GOAT:")
 print("\t\t Current price: " + str(goat_price))
 print("Find at: " + str(goat_url) + "\n")
+print("\t Grailed:")
+print("\t\t Average price: " + str(grailed_average_price))
+print("Find at: " + str(grailed_url) + "\n")
